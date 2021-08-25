@@ -4,7 +4,7 @@ import numpy as np
 
 
 def load_model():
-    with open('D:/File/ML projects/Salary-prediction-streamlit/Model/saved_steps.pkl', 'rb') as file:
+    with open('Add ML Model', 'rb') as file:
         data = pickle.load(file)
     return data
 
