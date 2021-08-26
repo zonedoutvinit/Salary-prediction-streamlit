@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -----------------------------
 *Orginal dataset 2020 Report
 -----------------------------
@@ -32,4 +33,40 @@ Sample Test results : (GridSearch of DT)
 array([[35.,  2., 15.]]) input 
 array([97573.125]) output
 
+=======
+-----------------------------
+*Orginal dataset 2020 Report
+-----------------------------
+Outlier remover :
+df = df[df["Salary"] <= 250000] ##Above 250k dollars/anum is creating outliers.
+df = df[df["Salary"] >= 10000] 
+df = df[df['Country'] != 'Other']
+
+Model Testing :
+Linear regression error rate : 39274.75368318509
+Decision Tree error rate : 29414.938206831015   GridSearch of DT : 30428.508362980854
+Random Forest error rate : 29487.30868635557
+
+Sample Test results : (GridSearch of DT)
+array([[13.,  2., 15.]]) input 
+array([139427.26315789]) Output 
+
+-----------------------------
+*Modified DataSet 2020 + 2019
+-----------------------------
+Outlier remover :
+df = df[df["Salary"] <= 120000] ##Above 120k dollars/anum is creating outliers.
+df = df[df["Salary"] >= 10000] 
+df = df[df['Country'] != 'Other'] 
+
+Model Testing :
+Linear regression error rate : 26443.01838008953
+Decision Tree error rate : 16748.74747061543   GridSearch of DT : 17191.024430172416     
+Random Forest error rate : 16785.43238028018
+
+Sample Test results : (GridSearch of DT)
+array([[35.,  2., 15.]]) input 
+array([97573.125]) output
+
+>>>>>>> d2aea12f949bdc68a85350f42fbc39383b051aba
 -----------------------------

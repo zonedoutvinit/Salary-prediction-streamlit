@@ -32,7 +32,7 @@ def clean_education(x):
 
 @st.cache
 def load_data():
-    df = pd.read_csv("D:/File/ML projects/Salary-prediction-streamlit/Dataset/survey_results_public.csv")
+    df = pd.read_csv("Location of Dataset")
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedComp"]]
     df = df[df["ConvertedComp"].notnull()]
     df = df.dropna()
